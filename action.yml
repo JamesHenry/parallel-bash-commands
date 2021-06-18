@@ -13,7 +13,7 @@ runs:
       shell: bash
 
 # Github actions are currently only able to accept strings as inputs to we have explicitly handle a certain number of
-# inputs that the user might reasonably expect to run in paralle. For now, we explicitly handle 10 commands as inputs.
+# inputs that the user might reasonably expect to run in parallel. For now, we explicitly handle 10 commands as inputs.
 inputs:
   cmd1:
     description: "Bash command"

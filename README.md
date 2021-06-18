@@ -1,5 +1,7 @@
 # parallel-bash-commands
 
+A Github Action which executes a list of bash commands in parallel and waits for them all to successfully complete
+
 ## Example Usage
 
 **.github/workflows/ci.yml**
