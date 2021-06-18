@@ -1,5 +1,5 @@
 name: "Parallel Bash Commands"
-description: "Coordinates the execution of a list of bash commands and waits for them all to complete"
+description: "Executes a list of bash commands in parallel and waits for them all to successfully complete"
 
 runs:
   using: "composite"
