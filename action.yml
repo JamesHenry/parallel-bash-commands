@@ -7,7 +7,7 @@ runs:
     - id: setParallelCommands
       run: |
         COMMANDS=$(node -e "console.log(JSON.stringify(['${{ inputs.cmd1 }}', '${{ inputs.cmd2 }}', '${{ inputs.cmd3 }}', '${{ inputs.cmd4 }}', '${{ inputs.cmd5 }}', '${{ inputs.cmd6 }}', '${{ inputs.cmd7 }}', '${{ inputs.cmd8 }}', '${{ inputs.cmd9 }}', '${{ inputs.cmd10 }}'].filter(Boolean)))")
-        echo "::set-output name=commands::$COMMANDS"
+        echo "commands=$COMMANDS" >> $GITHUB_OUTPUT
       shell: bash
     - run: ${{ github.action_path }}/run.sh '${{ steps.setParallelCommands.outputs.commands }}'
       shell: bash
